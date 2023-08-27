@@ -33,14 +33,14 @@ void separatePage(ofstream &file, int &numPages, int &numLines) {
 // the string line_. If it doesn't exist, the function will output that the
 // file cannot be opened.
 void readFile(string name, string &line_) {
-	ifstream file_(name);
-	if(file_.is_open()) {
-	    getline(file_,line_);
-		file_.close();
-	}
-	else {
-		cout << "file not opened" << endl;
-	}
+    ifstream file_(name);
+    if(file_.is_open()) {
+        getline(file_,line_);
+        file_.close();
+    }
+    else {
+        cout << "file not opened" << endl;
+    }
 }
 
 
@@ -48,7 +48,7 @@ void readFile(string name, string &line_) {
 // line_ divided by diferent lines and pages in the text file.
 void writeFile(string name, string &line_) {
     ofstream outputFile_; 
-    outputFile_.open("document1.txt");
+    outputFile_.open(name);
 
     string lines = "";      // string that stores a text line
     int numLines = 0;       // number of lines in the current page
@@ -70,7 +70,7 @@ void writeFile(string name, string &line_) {
 
 
 int main() {
-	string line_;      // string that will store the content of the text file.
+    string line_;      // string that will store the content of the text file.
     readFile("document.txt", line_);
     writeFile("documentPaged.txt", line_);
 }
