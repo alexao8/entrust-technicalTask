@@ -19,6 +19,8 @@ Once the code is compiled, it can be runned using the following bash command:
 ./prova.x
 ```
 
+You should have a new text file called `documentPaged.txt` in the directory where you ran the code.
+
 ## Considerations
 - It can be tested using one-line text files called `document.txt`.
 - The file and the code file must be in the same directory or folder.
