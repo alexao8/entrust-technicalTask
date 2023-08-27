@@ -1,7 +1,7 @@
 # Technical Task for Entrust internship application
 
 ## Context
-In this private repository you can find a completed technical task for Entrust. The goal of this task is to develop a pagin application.
+In this repository you can find a completed technical task for Entrust. The goal of this task is to develop a pagin application.
 
 ### Problem to solve
 The paging problem consists in creating a file that is properly paged. Given a one-line text file, the program has to separate it in lines of 80 characters (if we reach this number of chars in the middle of a word, this one will be included in the actual line) and in pages every 25 lines. Pages will be differenciated with a separation mark. this separation mark will consist in a line of hastags "#" with the page number in the middle and one blank line before and after this separation line.
